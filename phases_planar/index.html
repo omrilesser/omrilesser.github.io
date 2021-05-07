@@ -37,11 +37,11 @@
 
 			<tr>
 			<td>
-			L<sub>M</sub>
+			L<sub>B</sub>
 			</td>
 			<td>
-			<input id="val_L_M" type="range" min="18" max="28" value="24" step="2" oninput="update_general(this.value)" onchange="update_general(this.value)" style="width: 150px;" />
-			<span id="range_L_M">0</span>
+			<input id="val_L_B" type="range" min="2" max="12" value="4" step="2" oninput="update_general(this.value)" onchange="update_general(this.value)" style="width: 150px;" />
+			<span id="range_L_B">0</span>
 			</td>
 			</tr>
 
@@ -71,30 +71,30 @@
 <tr>
 
 <td align="center"><img id="img"></td>
-<td><img src="geo_scan_03_figs/colorbar.png"></td>
+<td><img src="geo_scan_11_figs/colorbar.png"></td>
 </tr>
 
 </table>
 
 <script>
     
-	var img_prefix = "geo_scan_03_figs/"
-	var schematic_prefix = "geo_scan_02_schematics/"
+	var img_prefix = "geo_scan_11_figs/"
+	var schematic_prefix = "geo_scan_11_schematics/"
 	var W_M = document.getElementById("val_W_M").value;
-	var L_M = document.getElementById("val_L_M").value;
+	var L_B = document.getElementById("val_L_B").value;
 	var W_SC = document.getElementById("val_W_SC").value;
-	update_objects(W_M, L_M, W_SC);
+	update_objects(W_M, L_B, W_SC);
 
-	function update_objects(new_W_M, new_L_M, new_W_SC){
+	function update_objects(new_W_M, new_L_B, new_W_SC){
 		document.getElementById("range_W_M").innerHTML = new_W_M*10 + " nm";
-		document.getElementById("range_L_M").innerHTML = new_L_M*10 + " nm";
+		document.getElementById("range_L_B").innerHTML = new_L_B*10 + " nm";
 		document.getElementById("range_W_SC").innerHTML = new_W_SC*10 + " nm";
-		document.getElementById("img").src = img_prefix + "PD_" + new_W_M + "_" + new_L_M + "_" + new_W_SC + ".png";
-		document.getElementById("schematic").src = schematic_prefix + "geo_" + new_W_M + "_" + new_L_M + "_" + new_W_SC + ".png";
+		document.getElementById("img").src = img_prefix + "PD_" + new_W_M + "_" + new_L_B + "_" + new_W_SC + ".png";
+		document.getElementById("schematic").src = schematic_prefix + "geo_" + new_W_M + "_" + new_L_B + "_" + new_W_SC + ".png";
 	}
 	
 	function update_general(val) {
-		update_objects(document.getElementById("val_W_M").value, document.getElementById("val_L_M").value, document.getElementById("val_W_SC").value);
+		update_objects(document.getElementById("val_W_M").value, document.getElementById("val_L_B").value, document.getElementById("val_W_SC").value);
 	}
 	
 </script>

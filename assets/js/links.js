@@ -1,4 +1,3 @@
-<script>
 document.addEventListener("DOMContentLoaded", function() {
   const links = document.querySelectorAll("a[href^='http']");
 
@@ -8,4 +7,3 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
-</script>

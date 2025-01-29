@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://www.weizmann.ac.il/condmat/oreg/sites/all/images/favicon.ico" type="image/vnd.microsoft.icon" />
+  <title>Geometry scan - L_B</title>
+</head>
+
+<body>
+<font size="4em" face="Helvetica">
+
+<table align="center">
+
+<tr>
+
+<td align="right">
+
+<table>
+	<tr>
+		<td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</td>
+		<td align="center" width="50%">
+			<table>
+
+			<tr>
+			<td>
+			<i>L</i><sub>B</sub>
+			</td>
+			<td>
+			<input id="val_L_B" type="range" min="2" max="30" value="5" step="1" oninput="update_L_B(this.value)" onchange="update_L_B(this.value)" style="width: 150px;" />
+			<span id="range_L_B">0</span>
+			</td>
+			</tr>
+
+			</table>
+		</td>
+		<td>
+			<img id="schematic" style="width: 20vw;">
+		</td>
+	</tr>
+</table>
+
+</td>
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td align="center"><img id="img"></td>
+<td><img src="geo_scan_10_figs/colorbar.png"></td>
+</tr>
+
+</table>
+
+<script>
+    
+	var img_prefix = "geo_scan_10_figs/"
+	var schematic_prefix = "geo_scan_10_schematics/"
+	var L_B = document.getElementById("val_L_B").value;
+	update_L_B(L_B);
+
+	function update_L_B(new_L_B){
+		document.getElementById("range_L_B").innerHTML = new_L_B*10 + " nm";
+		document.getElementById("img").src = img_prefix + "PD_" + new_L_B + ".png";
+		document.getElementById("schematic").src = schematic_prefix + "geo_" + new_L_B + ".png";
+	}
+	
+</script>
+
+</font>
+</body>
+
+</html>

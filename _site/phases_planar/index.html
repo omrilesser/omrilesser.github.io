@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://www.weizmann.ac.il/condmat/oreg/sites/all/images/favicon.ico" type="image/vnd.microsoft.icon" />
+  <title>Geometry scan</title>
+</head>
+
+<body>
+<font size="4em" face="Helvetica">
+
+<table align="center">
+
+<tr>
+
+<td align="right">
+
+<table>
+	<tr>
+		<td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</td>
+		<td align="center" width="50%">
+			<table>
+
+			<tr>
+			<td>
+			W<sub>M</sub>
+			</td>
+			<td>
+			<input id="val_W_M" type="range" min="10" max="16" value="12" step="1" oninput="update_general(this.value)" onchange="update_general(this.value)" style="width: 150px;" />
+			<span id="range_W_M">0</span>
+			</td>
+			</tr>
+
+			<tr>
+			<td>
+			L<sub>B</sub>
+			</td>
+			<td>
+			<input id="val_L_B" type="range" min="2" max="12" value="4" step="2" oninput="update_general(this.value)" onchange="update_general(this.value)" style="width: 150px;" />
+			<span id="range_L_B">0</span>
+			</td>
+			</tr>
+
+			<tr>
+			<td>
+			W<sub>SC</sub> 
+			</td>
+			<td>
+			<input id="val_W_SC" type="range" min="2" max="8" value="5" step="1" oninput="update_general(this.value)" onchange="update_general(this.value)" style="width: 150px;" />
+			<span id="range_W_SC">0</span>
+			</td>
+			</tr>
+
+			</table>
+		</td>
+		<td>
+			<img id="schematic" style="width: 20vw;">
+		</td>
+	</tr>
+</table>
+
+</td>
+<td> </td>
+
+</tr>
+
+<tr>
+
+<td align="center"><img id="img"></td>
+<td><img src="geo_scan_11_figs/colorbar.png"></td>
+</tr>
+
+</table>
+
+<script>
+    
+	var img_prefix = "geo_scan_11_figs/"
+	var schematic_prefix = "geo_scan_11_schematics/"
+	var W_M = document.getElementById("val_W_M").value;
+	var L_B = document.getElementById("val_L_B").value;
+	var W_SC = document.getElementById("val_W_SC").value;
+	update_objects(W_M, L_B, W_SC);
+
+	function update_objects(new_W_M, new_L_B, new_W_SC){
+		document.getElementById("range_W_M").innerHTML = new_W_M*10 + " nm";
+		document.getElementById("range_L_B").innerHTML = new_L_B*10 + " nm";
+		document.getElementById("range_W_SC").innerHTML = new_W_SC*10 + " nm";
+		document.getElementById("img").src = img_prefix + "PD_" + new_W_M + "_" + new_L_B + "_" + new_W_SC + ".png";
+		document.getElementById("schematic").src = schematic_prefix + "geo_" + new_W_M + "_" + new_L_B + "_" + new_W_SC + ".png";
+	}
+	
+	function update_general(val) {
+		update_objects(document.getElementById("val_W_M").value, document.getElementById("val_L_B").value, document.getElementById("val_W_SC").value);
+	}
+	
+</script>
+
+</font>
+</body>
+
+</html>

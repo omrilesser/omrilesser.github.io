@@ -8,7 +8,7 @@ author_profile: true
 <p></p>
 
 | --------------------------- | ------------ |
-| ![txt](/images/thumbnails/2510.07373.jpg) | 1. **O. Lesser**\*, Y. Liu\*, N. Maus\*, A. Panigrahi, K. Mallayya, L. M. Schoop, J. R. Gardner, and E.-A. Kim <br/>_Learning to predict superconductivity_<br/>[arXiv:2510.07373 (2025)](https://arxiv.org/abs/2510.07373) |
+| ![txt](/images/thumbnails/2510.07373.jpg) | 1. **O. Lesser**\*, Y. Liu\*, N. Maus\*, A. Panigrahi, K. Mallayya, L. M. Schoop, J. R. Gardner, and E.-A. Kim<br/>_Learning to predict superconductivity_<br/>[arXiv:2510.07373 (2025)](https://arxiv.org/abs/2510.07373) |
 | ![txt](/images/thumbnails/2509.16730.jpg) | 2.  S. Siddique, M. T. Kiani, **O. Lesser**, S. D. Funni, N. Agarwal, M. Gates, M. Shah, W. Millsaps, S. H. Sung, N. Schnitzer, L. Bhatt, D. A. Muller, R. Hovden, I. El Baggari, E.-A. Kim, and J. J. Cha<br/>_Melting point depression of charge density wave in 1T-TiSe2 due to size effects_<br/>[arXiv:2509.16730 (2025)](https://arxiv.org/abs/2509.16730) |
 | ![txt](/images/thumbnails/2506.08087.jpg) | 3. **O. Lesser**, C. Huang, J. P. Sethna, and E.-A. Kim<br/>_Emblems of pair density waves: dual identity of topological defects and their transport signatures_<br/>[arXiv:2506.08087 (2025)](https://arxiv.org/abs/2506.08087) |
 | ![txt](/images/thumbnails/2505.15891.jpg) | 4. **O. Lesser**\*, S. Banerjee\*, X. Wang, J. Kim, E. Altman, and D. Chowdhury<br/>_Gaplessness from disorder and quantum geometry in gapped superconductors_<br/>[arXiv:2505.15891 (2025)](https://arxiv.org/abs/2505.15891) |

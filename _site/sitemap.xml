@@ -23,4 +23,8 @@
 <loc>http://localhost:4000/phases_planar/</loc>
 <lastmod>2025-01-29T04:59:06+00:00</lastmod>
 </url>
+<url>
+<loc>http://localhost:4000/materials_filter/</loc>
+<lastmod>2025-01-29T04:59:06+00:00</lastmod>
+</url>
 </urlset>

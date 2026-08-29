@@ -1,3 +1,5 @@
 papers_thumbnails
 *.py
 *.xlsx
+.DS_Store
+**/.DS_Store
